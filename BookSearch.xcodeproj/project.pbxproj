@@ -6,8 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B012D2BA2DD85F920079D5BD /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B012D2B92DD85F920079D5BD /* SnapKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
-		B012D2612DD854C10079D5BD /* BookSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0D5DFB42DD860DD006A178B /* BookSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B012D2BA2DD85F920079D5BD /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,16 +51,8 @@
 			isa = PBXGroup;
 			children = (
 				B012D2632DD854C10079D5BD /* BookSearch */,
-				B012D2622DD854C10079D5BD /* Products */,
+				B0D5DFB42DD860DD006A178B /* BookSearch.app */,
 			);
-			sourceTree = "<group>";
-		};
-		B012D2622DD854C10079D5BD /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B012D2612DD854C10079D5BD /* BookSearch.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,9 +75,11 @@
 			);
 			name = BookSearch;
 			packageProductDependencies = (
+				B012D2B92DD85F920079D5BD /* SnapKit */,
+				B012D2BB2DD85F920079D5BD /* SnapKit-Dynamic */,
 			);
 			productName = BookSearch;
-			productReference = B012D2612DD854C10079D5BD /* BookSearch.app */;
+			productReference = B0D5DFB42DD860DD006A178B /* BookSearch.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -107,8 +106,11 @@
 			);
 			mainGroup = B012D2582DD854C10079D5BD;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B012D2B82DD85F920079D5BD /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = B012D2622DD854C10079D5BD /* Products */;
+			productRefGroup = B012D2582DD854C10079D5BD;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -150,7 +152,6 @@
 				INFOPLIST_FILE = BookSearch/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -178,7 +179,6 @@
 				INFOPLIST_FILE = BookSearch/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -335,6 +335,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B012D2B82DD85F920079D5BD /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B012D2B92DD85F920079D5BD /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B012D2B82DD85F920079D5BD /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		B012D2BB2DD85F920079D5BD /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B012D2B82DD85F920079D5BD /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B012D2592DD854C10079D5BD /* Project object */;
 }
